@@ -131,7 +131,7 @@ XGBoost主要参数
 
 回测结果如图，
 
-<img src="https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/backtest.png" width=120%>
+<img src="https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/backtest.png" width=180%>
 
 ### 4. 总结
 
