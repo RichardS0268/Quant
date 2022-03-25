@@ -49,7 +49,6 @@ XGBoost算法流程
 
 ![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled.png)
 
-图片来源：《华泰人工智能》系列六
 
 XGBoost主要参数
 
@@ -72,7 +71,7 @@ XGBoost主要参数
 
 本项目借鉴研报中的网格搜索交叉验证，对超参数max_depth和subsample_set进行GridSearch，但发现后者的改变对模型训练结果不起明显作用（这可能是因为每支个股每月只选取了一条数据，总的数据量不大，subsample_set的作用不明显），于是仅对max_depth进行交叉验证，结果如图：
 
-![Untitled](Untitled%207b8ef/Untitled%203.png)
+![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%203.png)
 
 对于其他滚动区间上的模型采取同样的策略，找到较优的超参设定训练模型
 
