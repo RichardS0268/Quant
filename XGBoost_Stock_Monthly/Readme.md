@@ -47,18 +47,17 @@ XGBoost 是 Gradient Boosting 方法的一种高效实现，也是 GBDT 算法�
 
 XGBoost算法流程
 
-![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled.png)
-
+<img src="https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled.png" width=60%>
 
 XGBoost主要参数
 
-![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%201.png)
+<img src="https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%201.png" width=60%>
 
 **2.2 训练集，验证集，测试集的划分**
 
 本项目采用7段回测的方法，进行模型滚动训练
 
-![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%202.png)
+<img src="https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%202.png" width=60%>
 
 例入将2010-2014年的数据作为样本内数据（训练集和验证集），将2015年的数据作为样本外数据（测试集）
 
@@ -71,7 +70,8 @@ XGBoost主要参数
 
 本项目借鉴研报中的网格搜索交叉验证，对超参数max_depth和subsample_set进行GridSearch，但发现后者的改变对模型训练结果不起明显作用（这可能是因为每支个股每月只选取了一条数据，总的数据量不大，subsample_set的作用不明显），于是仅对max_depth进行交叉验证，结果如图：
 
-![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%203.png)
+<img src="https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%203.png" width=40%>
+
 
 对于其他滚动区间上的模型采取同样的策略，找到较优的超参设定训练模型
 
@@ -80,13 +80,14 @@ XGBoost主要参数
 - 研报利用XGBoost进行二元回归，其label分别是1和-1。其中1代表下一个月的超额收益率在前30%，-1表示下一个月的超额收益率在后30%。经过试验发现，将数据集分成三类（前30%，后30%，其他）分别标为2，0，1，使用多分类模型能达到更高的预测准确率。这是因为使用二分类时，不同个股间的超额收益率的差距会被缩小，模型预测准确率及回测结果都会变差。
 - 通过分析各feature的重要度——以其为分割依据的节点的个数，得到如下结果（”xgb-2010-2014”）
 
-![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%204.png )
+<img src="https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%204.png" width=80%>
+
 
 **2.5 模型表现**
 
 分7段滚动训练模型，滚动测试后，得出模型的预测准确率，如图
 
-![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/mons_acc.png)
+<img src="https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/mons_acc.png" width=110%>
 
 ### 3. 策略部署与回测
 
@@ -130,7 +131,7 @@ XGBoost主要参数
 
 回测结果如图，
 
-![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/backtest.png)
+<img src="https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/backtest.png" width=120%>
 
 ### 4. 总结
 
