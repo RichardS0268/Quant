@@ -59,7 +59,7 @@ XGBoost主要参数
 
 本项目采用7段回测的方法，进行模型滚动训练
 
-![Untitled](Untitled%207b8ef/Untitled%202.png)
+![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%202.png)
 
 例入将2010-2014年的数据作为样本内数据（训练集和验证集），将2015年的数据作为样本外数据（测试集）
 
