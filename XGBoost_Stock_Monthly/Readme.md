@@ -53,7 +53,7 @@ XGBoost算法流程
 
 XGBoost主要参数
 
-![Untitled](Untitled%207b8ef/Untitled%201.png)
+![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%201.png)
 
 **2.2 训练集，验证集，测试集的划分**
 
