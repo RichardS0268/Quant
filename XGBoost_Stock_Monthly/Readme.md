@@ -47,7 +47,7 @@ XGBoost 是 Gradient Boosting 方法的一种高效实现，也是 GBDT 算法�
 
 XGBoost算法流程
 
-![图片来源：《华泰人工智能》系列六](Untitled%207b8ef/Untitled.png)
+![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled.png)
 
 图片来源：《华泰人工智能》系列六
 
@@ -81,7 +81,7 @@ XGBoost主要参数
 - 研报利用XGBoost进行二元回归，其label分别是1和-1。其中1代表下一个月的超额收益率在前30%，-1表示下一个月的超额收益率在后30%。经过试验发现，将数据集分成三类（前30%，后30%，其他）分别标为2，0，1，使用多分类模型能达到更高的预测准确率。这是因为使用二分类时，不同个股间的超额收益率的差距会被缩小，模型预测准确率及回测结果都会变差。
 - 通过分析各feature的重要度——以其为分割依据的节点的个数，得到如下结果（”xgb-2010-2014”）
 
-![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%204.png width=60%)
+![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%204.png )
 
 **2.5 模型表现**
 
