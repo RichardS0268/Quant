@@ -81,13 +81,13 @@ XGBoost主要参数
 - 研报利用XGBoost进行二元回归，其label分别是1和-1。其中1代表下一个月的超额收益率在前30%，-1表示下一个月的超额收益率在后30%。经过试验发现，将数据集分成三类（前30%，后30%，其他）分别标为2，0，1，使用多分类模型能达到更高的预测准确率。这是因为使用二分类时，不同个股间的超额收益率的差距会被缩小，模型预测准确率及回测结果都会变差。
 - 通过分析各feature的重要度——以其为分割依据的节点的个数，得到如下结果（”xgb-2010-2014”）
 
-![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%204.png,'height'=0.5)
+![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/Untitled%204.png width=60%)
 
 **2.5 模型表现**
 
 分7段滚动训练模型，滚动测试后，得出模型的预测准确率，如图
 
-![mons_acc.png](Untitled%207b8ef/mons_acc.png)
+![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/mons_acc.png)
 
 ### 3. 策略部署与回测
 
@@ -131,7 +131,7 @@ XGBoost主要参数
 
 回测结果如图，
 
-![backtest.png](Untitled%207b8ef/backtest.png)
+![](https://github.com/RichardS0268/Quant/blob/main/XGBoost_Stock_Monthly/imgs/backtest.png)
 
 ### 4. 总结
 
