@@ -1,6 +1,6 @@
 
 
-# <img src="https://media.giphy.com/media/JtBZm3Getg3dqxK0zP/giphy-downsized.gif" width="30px" />  Quant 
+# <img src="https://media.giphy.com/media/JtBZm3Getg3dqxK0zP/giphy-downsized.gif" height="30px" />  Quant 
 
 ## 🎈 This repo contains 
 + Projects re-implemented from reaseraches, books, blogs, videos ect.   
