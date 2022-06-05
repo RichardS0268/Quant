@@ -5,8 +5,8 @@
 ## 🎈 This repo contains 
 + Projects re-implemented from reaseraches, books, blogs, videos ect.   
 + Courses projects relevant to Quant.
+<div><iframe title="Embedded cell output" src="https://embed.deepnoteworkspace.com/index.html?cache=loyllyzlb7#00014-60008299-add9-4143-a2bc-67cf1be0dfb5:0"?height=58" height="58" width="500"/></div>
 
-<iframe title="Embedded cell output" src="https://embed.deepnoteworkspace.com/index.html?cache=loyllyzlb7#00014-60008299-add9-4143-a2bc-67cf1be0dfb5:0"?height=58" height="58" width="500"/>
 
  <iframe  
  height=850 
